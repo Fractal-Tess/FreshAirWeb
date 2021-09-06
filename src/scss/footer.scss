@@ -1,0 +1,22 @@
+@use "global" as *;
+
+
+.footer{
+    height: 8vh;
+    width: 100%;
+    background-color: $bp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    img{
+        height: 6vh;
+        width: auto;
+        margin:2vw;
+        border-radius: 50%;
+    }
+    a{
+        color: $gp;
+    }
+}
