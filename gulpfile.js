@@ -7,9 +7,6 @@ const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 
-// Use dart-sass for @use
-//sass.compiler = require('dart-sass');
-
 // Sass Task 1
 function scssTask() {
   return src('src/scss/style.scss', { sourcemaps: true })
@@ -36,9 +33,6 @@ function watchTask() {
 
   );
 }
-
-// Default Gulp Task
-// exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
 
 // Build Gulp Task
 exports.default = series(scssTask, jsTask, watchTask);
